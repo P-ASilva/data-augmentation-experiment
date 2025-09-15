@@ -135,7 +135,8 @@ nav:
   - Home: index.md
   - This documentation: ./thisdocumentation/main.md
   - Exercises:
-    - 1. Data: ./exercicios/1_data.md
+    - 1. Data: ./exercises/1_data.md/main.md
+    - 2. Perceptron: ./exercises/2_perceptron/main.md
   - Roteiros:
     - Roteiro 1: ./roteiro1/main.md
     - Roteiro 2: ./roteiro2/main.md

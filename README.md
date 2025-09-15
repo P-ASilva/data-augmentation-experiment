@@ -1,3 +1,8 @@
+# TODO:
+- rename titles to make it more presentable
+- add AI usage disclaimer in footnote format - used for graphing and quick implementation of generated report
+- make the perceptron code update variables instead of generating this template
+
 ## Setup
 
 Para utilizar o código deste repositório, siga as instruções a seguir:
