@@ -134,7 +134,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - This documentation: ./thisdocumentation/main.md
-  - Exercises:
-    - 1. Data: ./exercises/1_data.md/main.md
-    - 2. Perceptron: ./exercises/2_perceptron/main.md
-    - 3. MLP: ./exercises/3_mlp/main.md
+  - Studies:
+    - 1. Data: ./studies/1_data.md
+    - 2. Perceptron: ./studies/2_perceptron.md
+    - 3. MLP: ./studies/3_mlp.md
