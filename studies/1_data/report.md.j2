@@ -1,0 +1,33 @@
+# Study 1 – Exploring Class Separability in 2D
+
+## 1. Data Generation
+
+Generated a synthetic dataset with {{ samples_per_class * num_classes }} samples ({{ samples_per_class }} per class) using Gaussian distributions defined by the given means and standard deviations:
+
+{% for cls, params in class_params.items() %}
+- **Class {{ cls }}:** Mean = {{ params.mean }}, Std = {{ params.std }}  
+{% endfor %}
+
+## 2. Visualization: Scatter Plot
+
+![scatter]({{ scatter_plot_path }})
+
+## 3. Analysis and Decision Boundaries
+
+### a. Distribution and Overlap
+- **Class 0** is spread vertically due to a large standard deviation in the y-axis.  
+- **Class 1** clusters around (5,6), moderately spread.  
+- **Class 2** lies near the bottom-center region, concentrated.
+- **Class 3** is far apart on the right side, with significant vertical spread.  
+- There is some overlap between Classes 0 and 1, and between Classes 1 and 2.  
+- Class 3 is clearly separable from the others due to its distance.
+
+### b. Linear Separability
+A single global **linear boundary cannot perfectly separate all classes**, because Classes 0, 1, and 2 overlap. However, piecewise linear or nonlinear decision boundaries could achieve good separation.
+
+### c. Decision Boundaries
+A neural network would likely:
+- Draw **nonlinear curved boundaries** between Classes 0, 1 and 2.  
+- Use a **clear vertical cut** to separate Class 3 from the others.
+
+As such, a trained model would need at least moderately complex decision boundaries to classify all four classes correctly.
