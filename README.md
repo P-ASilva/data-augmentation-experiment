@@ -1,7 +1,8 @@
 # TODO:
-- rename titles to make it more presentable
+- rename titles to make it more presentable #DONE
 - add AI usage disclaimer in footnote format - used for graphing and quick implementation of generated report
-- make the perceptron code update variables instead of generating this template
+- make the perceptron code update variables instead of generating this template #DONE
+- add optional preload scripts compatibility to main build script
 
 ## Setup
 
