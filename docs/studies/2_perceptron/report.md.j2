@@ -1,0 +1,27 @@
+# Study 2A - Linear Separability Analysis
+
+**Final Weights:** [{% for w in study_a.final_weights %}{{ "%.8f" % w }}{% if not loop.last %}, {% endif %}{% endfor %}]  
+**Final Bias:** {{ "%.4f" % study_a.final_bias }}  
+**Final Accuracy:** {{ "%.2f" % study_a.final_accuracy }}%  
+**Epochs until convergence:** {{ study_a.epochs_used }}
+
+### Analysis
+The perceptron converged quickly because the data is linearly separable. Clusters are compact and far apart, so the decision boundary is learned in few epochs.
+
+![Decision Boundary]({{ study_a.boundary_plot_path }})  
+![Accuracy Curve]({{ study_a.accuracy_plot_path }})
+
+---
+
+# Study 2B - Non-Linear Separability Challenge
+
+**Final Weights:** [{% for w in study_b.final_weights %}{{ "%.8f" % w }}{% if not loop.last %}, {% endif %}{% endfor %}]  
+**Final Bias:** {{ "%.4f" % study_b.final_bias }}  
+**Final Accuracy:** {{ "%.2f" % study_b.final_accuracy }}%  
+**Epochs until convergence:** {{ study_b.epochs_used }}
+
+### Analysis
+Here, the means are closer and the variance is higher, causing overlap between classes. This prevents perfect linear separation, so the perceptron may not converge to 100% accuracy. Training may oscillate or plateau, highlighting the model's limitation with non-separable data.
+
+![Decision Boundary]({{ study_b.boundary_plot_path }})  
+![Accuracy Curve]({{ study_b.accuracy_plot_path }})
